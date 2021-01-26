@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <script >
+ 	$(function(){
+ 		$("li").hover(function(){
+ 			$(this).css("color","white")
+ 		});
+ 		$("li").mouseleave(function(){
+ 			$(this).css("color","grey")
+ 		})
+ 	});
+ 	$(function(){
+ 		$("#ac").click(function(){
+ 			$("#m").show();
+ 		});
+ 	});
+ 	$(document).ready(function(){
+  $("#m").hover(function(){
+    $("#m").css({"background-color": "white"});
+  });
+});
+ 	$(function(){
+ 		$("body").mouseenter(function()
+ 		{
+ 		  $("p").slideDown(1000);
+ 		})
+ 	})
+ </script>
+ <script >
+ 	function f(){
+ 		var x=document.getElementById('abc');
+ 		var z=document.getElementById('al');
+ 		var l=z.toString;
+ 		var len=l.length;
+ 		if(isemail(x,"please enter valid email id")){
+ 			if(pass(len,"hk")){
+ 			return true;
+ 		}
+ 		}
+ 		else{
+ 			return false;
+ 		}
+ 	}
+   function isemail(y,elem){
+   	var s=/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+   	if(y.value.match(s)){
+   		return true;
+   	}
+   	else{
+   		alert(elem);
+   		return false;
+   	}
+   }
+   	function pass(c,h){
+   		
+   		alert(c);	
+   		if(len<=6){
+   			alert(h);
+   			return false;
+   		}
+   		else{
+   			
+   			return true;
+   		}
+   	}
+   
+ </script>
+</head>
+<style >
+	body{
+		 
+  background-image: url("wll2.jpg");
+  background-repeat: no-repeat;
+background-size: cover;
+	}
+	
+	ul,li{
+		float:left;
+		color:grey;
+		padding :16px;
+		 background-color: black
+	}
+	
+	#ab{
+         border-radius: 4px;
+         margin-top:10px;
+         margin-left:900px ;
+            background-color: lightgrey;
+	}
+	
+    	#abc{
+		 height:35px;
+		
+		 margin-top:150px;
+		margin-left: 500px;	
+	      border-color:white ;
+		  background-color:;
+		  width:370px;
+		  color: ;
+		   font-size: 20px;
+		     border-radius: 0px;
+	}
+	#m{
+		float: right;
+		 border-radius: 6px;
+		  background-color:white;
+		   color:black;
+	}
+	#al{
+         height:35px;
+		 margin-top:100px;
+		margin-left: 500px;	
+	      border-color: white;
+		  background-color:;
+		  width:370px;
+		  color:black;
+		  font-size: 20px;
+		  border-radius:0 px;
+	}
+	p{
+		position: absolute;
+		color:black;
+		text-align: center;
+		margin-top: 150px;
+		margin-left: 390px;
+		display:none;
+	}
+	footer{
+		width:1320px;
+		height:250px;
+		background-color: black;
+		margin-top: 70px;
+	}
+	#a1{
+		 width:150px;
+		  border-radius: 0px;
+		background-color:green ;
+		margin-top:200px;
+		margin-left: -260px;
+		color:black;
+		position: absolute;
+
+	}
+</style>
+<body >
+
+	<div id="cd"  class="container-fluid">
+		<form onsubmit='f()'>
+		<ul type="none" class="container-fluid">
+		<li><a href="file:///C:/Users/MY%20LAPPY/Desktop/website/home.html">Home</a></li>
+		<li><a href="file:///C:/Users/MY%20LAPPY/Desktop/website/about.html">About</a></li>
+	    <li ><a href="file:///C:/Users/MY%20LAPPY/Desktop/website/home.html#adv">Adventures</a></li>
+	   <li><img src="https://img.icons8.com/2266EE/search" id="ac"></li>
+	   <li><input type="text" placeholder="search" id="m" style="display: none;" ></li>
+	    <li  id="ef" style="float:right">Signup</li></ul>
+	   <h1><p style="color:white;">Welcome To Tourist Hub</p></h1>
+		
+		<input type="text" placeholder="Enter your email" id="abc" >
+        <input type="password" placeholder="Enter your password" id="al" >
+        <button type="submit" id="a1" value="check form">Login</button>
+	</div>
+
+</form>
+
+</body>
+</html>

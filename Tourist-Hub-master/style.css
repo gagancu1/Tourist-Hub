@@ -1,0 +1,42 @@
+<style>
+ 	body{
+ 		background-color: ;
+          	}
+      div{
+      	text-align: center;
+      }
+      a:hover img{
+        transform: scale(1.001);
+        border-radius: 0px;
+        border:solid white 2px;
+      }
+      #a{
+      	text-align: center;
+      	color: red;
+      	font-size: 100px;
+        font-style: ;
+      background-color: white;
+         width:100%;
+         margin-top: -10px;
+      }
+      #ac{
+           margin-left: -10px;
+        margin-top: -330px;
+         position:absolute;
+         width:30%;
+      }
+      #bc{
+        margin-left: 700px;
+        margin-top: -330px;
+        width:30%;
+        position:absolute;
+      }
+       #b{
+        margin-left: 800px;
+        margin-top: -350px;
+      }
+     #c {
+margin-left: -800px;
+        margin-top: -350px;
+      }
+ </style>
